@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.box1,.box2,.box3, .box4 {
+  height: 100px;
+}
