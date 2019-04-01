@@ -8,3 +8,4 @@
 
 1. adding support for the ordering of keys.
 2. Adding support for getting list of all the shortcuts.
+3. Need to add examples.
