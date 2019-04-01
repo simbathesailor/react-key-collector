@@ -81,8 +81,4 @@ function useKeyCollector(
   // return
 }
 
-// export default function test() {
-//   return "test"
-// }
-
 export default useKeyCollector;
