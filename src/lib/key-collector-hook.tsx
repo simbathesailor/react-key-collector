@@ -31,29 +31,21 @@ function useKeyDown(
   element.addEventListener(
     "keydown",
     (event: { which: number; [key: string]: any }) => {
-      console.log("in key down", event.which);
       const stringVersion: string = event.which.toString();
       PressedKeyMapping[stringVersion] = true;
-      console.log(
-        "checkWhetherRequiredKeyPressed(keysArray, PressedKeyMapping)",
-        PressedKeyMapping
-      );
       if (checkWhetherRequiredKeyPressed(keysArray, PressedKeyMapping)) {
         callback(event);
         keysArray.forEach((elem: number | string) => {
           PressedKeyMapping[elem] = false;
         });
       }
-      console.log(PressedKeyMapping);
     }
   );
   element.addEventListener(
     "keyup",
     (event: { which: any; [key: string]: any }) => {
-      console.log("in key up", event.which);
       const stringVersion: string = event.which.toString();
       PressedKeyMapping[stringVersion] = false;
-      console.log(PressedKeyMapping);
     }
   );
 }
