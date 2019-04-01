@@ -2,6 +2,7 @@
   "name": "react-key-collector",
   "version": "0.1.0",
   "main": "dist/index.js",
+  "author": "anilchaudhary453@gmail.com",
   "module": "dist/index.js",
   "files": [
     "dist",
