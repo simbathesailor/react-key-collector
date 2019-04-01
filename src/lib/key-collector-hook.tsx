@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-//API
+// API
 
-//useKeyCollector(keys array, callbacks, element)
-//useKeyCollector({
+// useKeyCollector(keys array, callbacks, element)
+// useKeyCollector({
 //  "Shift A B": callback
 //})
 
