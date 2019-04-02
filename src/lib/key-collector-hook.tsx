@@ -53,8 +53,12 @@ function useKeyDown(
 function useKeyCollector(
   keysArray: any,
   callback: any,
-  element: Document | null | HTMLElement | Element,
-  elementExtractor?: () => Document | null | HTMLElement | Element
+  element: null | HTMLElement | Element | DocumentAndElementEventHandlers,
+  elementExtractor?: () =>
+    | null
+    | HTMLElement
+    | Element
+    | DocumentAndElementEventHandlers
 ) {
   const currentKeyDown = [];
   useEffect(() => {

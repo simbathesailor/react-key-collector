@@ -51,7 +51,7 @@ function App() {
       alert("here you go");
     },
     null,
-    (): HTMLElement | null | Document | Element => {
+    (): HTMLElement | null | Element => {
       return document.getElementsByClassName("box1")[0];
     }
   );
